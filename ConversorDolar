@@ -1,0 +1,16 @@
+algoritmo "ConversorMoedas"
+var
+   R, D : Real
+   contador, V: inteiro
+inicio
+   contador <- 1
+   Escreval ("Quantas conversões você quer realizar?")
+   Leia (V)
+   Enquanto (contador <= V)faca
+      Escreval ("Qual o valor em R$")
+      Leia (R)
+      D <- R/5.06
+      Escreval("O Valor convertido em U$ é ", D:3:2)
+      contador <- contador + 1
+   Fimenquanto
+fimalgoritmo
