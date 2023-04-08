@@ -1,0 +1,26 @@
+algoritmo "SomadorNúmerico"
+var
+  contador, N, soma, maior, menor :inteiro
+inicio
+  contador <- 1
+  soma <- 0
+  Enquanto (contador <= 5)faca
+   Escreval ("Digite o", contador, "o. valor número:")
+   Leia (N)
+   se contador= 1 entao
+    		maior<-N
+    		menor<-N
+    	fimse
+    	se N > maior entao
+    		maior <- N
+    	fimse
+    	se N < menor entao
+    		menor <- N
+    	fimse
+   soma <- soma + N
+   contador <- contador + 1
+  FimEnquanto
+  Escreval("A soma de todos os valores é ", soma)
+  Escreval("O Maior valor digitado foi ", maior)
+  Escreval("O Menor valor digitado foi ", menor)
+fimalgoritmo
