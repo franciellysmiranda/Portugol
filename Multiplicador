@@ -1,0 +1,13 @@
+algoritmo "Multiplicador"
+var
+  N, contador, mult: inteiro
+inicio
+  contador <- 1
+  Escreval ("A tabuada de que número você quer ver?")
+  Leia (N)
+  Repita
+  Escreval (N, " x", contador, " =", mult)
+  mult <- contador*N
+  contador <- contador+1
+  Ate (contador >10)
+fimalgoritmo
