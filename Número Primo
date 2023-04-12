@@ -1,0 +1,21 @@
+algoritmo "Numero Primo"
+var
+   C, N, Contdiv: inteiro
+inicio
+   C <- 1
+   Contdiv <- 0
+   Escreva ("Digite um número:")
+   Leia (N)
+   Repita
+      Escreva (C)
+      Se (N % C = 0 ) entao
+         Contdiv <- Contdiv + 1
+      Fimse
+      C <- C + 1
+   Ate ( C > N)
+   Se (Contdiv > 2 ) entao
+   Escreva ("cO Valor", N, " não é primo")
+   senao
+   Escreva (" O Valor", N,  " é primo")
+      Fimse
+fimalgoritmo
