@@ -1,0 +1,33 @@
+algoritmo "SuperContador"
+var
+   C, N, resp: inteiro
+inicio
+   C <- 10
+   N <-1
+   Escreval ("====================")
+   Escreval ("|      MENU        |")
+   Escreval ("====================")
+   Escreval ("|[1] De 1 a 10|     ")
+   Escreval ("|[2] De 10 a 1|     ")
+   Escreval ("|[3] Sair           ")
+   Escreval ("====================")
+   Leia (resp)
+   Se (resp = 1) entao
+      Enquanto (N <= 10)faca
+         Escreva (N)
+         N <- N + 1
+      FimEnquanto
+   Senao
+      Se(resp = 2)entao
+         Enquanto ( C >= 1)faca
+            Escreva (C)
+            C <- C - 1
+         FimEnquanto
+      senao
+         Se (resp = 3)entao
+            Escreval ("==========")
+            Escreval ("Finalizado")
+         Fimse
+   Fimse
+Fimse
+fimalgoritmo
